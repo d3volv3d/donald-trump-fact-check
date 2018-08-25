@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+svg { overflow: visible;  border: solid 1px green; }
+
+.axis { font-size: 10px; font-family: "Lato", sans-serif; }
+.axis line, .axis path { stroke: rgb(120,120,120); }
+.axis text { fill: rgb(90,90,90); }
+
+
+.line { fill: none; stroke: rgb(153,0,13); stroke-width: 1px; }
+.area { stroke: none; fill: rgb(254,229,217); }

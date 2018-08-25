@@ -1,0 +1,13 @@
+<!-- <div *ngFor="let fa of facet" (click)="sendMessage(fa)">{{ fa }}</div> -->
+
+<form>
+<table class='slim-filter-table slim-filter-table-scroll'>
+  <tr *ngFor="let filter of facet ">
+      <!-- <td><input type="checkbox" id="cbox{{filter}}" [(ngModel)]="filter.selected" (click)="sendMessage(filter)"></td> -->
+      <td><input name="tagOptions" id="tag{{filter}}" type="checkbox" [(ngModel)]="hobbies[filter]" (click)="changeCheckbox(filter)" /></td>
+      <td class='pointed' (click)="sendMessage(filter)">{{ filter }}</td>
+      <td>{{filter.count}}</td>
+  </tr>
+</table>
+</form>
+
